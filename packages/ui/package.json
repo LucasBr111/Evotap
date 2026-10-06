@@ -1,0 +1,26 @@
+{
+  "name": "@evotap/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "19.3.0"
+  },
+  "devDependencies": {
+    "@evotap/config": "workspace:*",
+    "typescript": "^5.9.0",
+    "eslint": "^9.0.0",
+    "@types/react": "^19.0.0"
+  }
+}
